@@ -1,7 +1,10 @@
 <?php
-Class Index {
+Class Index extends Controller {
     public function __construct(){
-        echo('hello');
+        parent::__construct();
+        
+        echo $this->_PATH_INFO;
+        echo 'hello';
     }
 }
 ?>
