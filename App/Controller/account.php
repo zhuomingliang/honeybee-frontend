@@ -5,10 +5,10 @@ Class AccountController extends Controller {
 
 
         $this->_routes = array(
-            '/^profile/' => 'Profile',
-            '/^secure/' => 'Secure',
+            '/^profile(?:\/.*)?$/'    => 'Profile',
+            '/^secure(?:\/.*)?$/'     => 'Secure',
+            '/^address(?:\/.*)?$/'    => 'Address',
         );
-        echo 'hello ';
     }
 
     public function route($controller_name = 'Account'){

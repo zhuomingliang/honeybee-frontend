@@ -1,8 +1,8 @@
 <?php
 
-class ProfileAction {
+class IndexAction {
     public function __construct($path_info) {
-        echo "from profile";
+
     }
 }
 
