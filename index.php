@@ -4,6 +4,7 @@ define('APP_DIR', dirname(__FILE__) . '/');
 require_once 'Honeybee/config/lib.config.php';
 
 require_once HONEYBEE_DIR . 'include/database/database.inc';
+require_once HONEYBEE_DIR . 'lib/Class/Core/Action/Action.php';
 require_once HONEYBEE_DIR . 'lib/Class/Core/Controller/AppController.php';
 
 require_once APP_DIR . 'Config/lib.config.php';

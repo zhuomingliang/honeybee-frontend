@@ -1,11 +1,16 @@
 <?php
+
+define('TEMPLATE_NAME', 'default');
+
+
 $databases['default']['default'] = array(
-  'driver' => 'pgsql',
+  'driver'   => 'pgsql',
   'database' => 'wanpai_hk',
   'username' => 'postgres',
   'password' => '123456',
-  'host' => 'localhost',
+  'host'     => 'localhost',
 );
+
 
 /*
   $databases['default']['slave'][] = array(
