@@ -1,14 +1,10 @@
 <?php
 define('APP_DIR', dirname(__FILE__) . '/');
 
-require_once 'Honeybee/config/lib.config.php';
+require 'Honeybee/config/lib.config.php';
 
-require_once HONEYBEE_DIR . 'include/database/database.inc';
-require_once HONEYBEE_DIR . 'lib/Class/Core/Action/Action.php';
-require_once HONEYBEE_DIR . 'lib/Class/Core/Controller/AppController.php';
-
-require_once APP_DIR . 'Config/lib.config.php';
-require_once APP_DIR . 'Config/app.config.php';
+require APP_DIR . 'Config/lib.config.php';
+require APP_DIR . 'Config/app.config.php';
 
 #require_once 'Honeybee/lib/Class/Core/Model/Mongo/Product.php';
 #require_once 'Honeybee/lib/Class/Core/Model/Mongo/Tag.php';
