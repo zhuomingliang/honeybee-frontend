@@ -23,11 +23,11 @@ if ($handle) {
           $mail->SMTPAuth   = true;                  // enable SMTP authentication
           $mail->Port       = 25;                    // set the SMTP port for the GMAIL server
           $mail->Username   = "no-reply@flashbid.cn"; // SMTP account username
-          $mail->Password   = "p0o9i8u7y6";        // SMTP account password
-          $mail->SetFrom('no-reply@flashbid.cn', '玩拍网');
-          $mail->AddReplyTo('no-reply@flashbid.cn', '玩拍网');
+          $mail->Password   = "";        // SMTP account password
+          $mail->SetFrom('no-reply@flashbid.cn', '');
+          $mail->AddReplyTo('no-reply@flashbid.cn', '');
           $mail->AddAddress($email, $name);
-          $mail->Subject = '玩拍网启用新域名 wanpai.com';
+          $mail->Subject = '';
           $mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
           $mail->MsgHTML(file_get_contents('contents.html'));
           $mail->Send();
