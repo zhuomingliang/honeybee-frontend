@@ -1,0 +1,9 @@
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to index.html
+                try_files $uri $uri/ @index;
+        }
+
+        location @index {
+                rewrite ^/([^/]*)/?(.*?)(?:/|.html)?$ /index.php?_CLASS_NAME=$1&_PATH_INFO=$2 last;
+        }
