@@ -9,6 +9,7 @@ $databases['default']['default'] = array(
   'username' => 'postgres',
   'password' => '123456',
   'host'     => 'localhost',
+  'port'	 => '6432'
 );
 
 
@@ -20,6 +21,7 @@ $databases['default']['default'] = array(
   'password' => 'secret',
   'host' => 'dbserver2',
 );
+
 $databases['default']['slave'][] = array(
   'driver' => 'mysql',
   'database' => 'drupaldb3',

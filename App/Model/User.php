@@ -1,7 +1,6 @@
 <?php
 
 class User {
-
     public function getUserById($id, $fields = array()) {
         return db_select('users','u')
             ->fields('u', $fields)
