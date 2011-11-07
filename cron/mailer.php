@@ -8,14 +8,10 @@ ini_set('auto_detect_line_endings', TRUE);
 $handle = @fopen('email_lists.txt', 'r');
 
 $per_count = 0;
-$count = 0;
 
 if ($handle) {
     while (!feof($handle)) {
         $buffer = fgets($handle, 4096);
-        if(++$count <= 1859) {
-            if(preg_match("/qq\.com/", $buffer)) continue;
-        }
 
         list($name,$email) = preg_split("/[\s]+/", $buffer, -1, PREG_SPLIT_NO_EMPTY);
         try {
