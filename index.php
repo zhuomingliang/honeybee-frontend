@@ -10,7 +10,7 @@ require APP_DIR . 'Config/app.config.php';
 #require_once 'Honeybee/lib/Class/Core/Model/Mongo/Tag.php';
 #require_once 'lib/Class/Base/Config.php';
 
-AppController::createApp()->run();
+SmartAppController::createApp()->run();
 
 #echo 'hi';
 /*
